@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.ico" />
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css'>
+
+    <!-----Google fonts link--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Work+Sans: wght@300; 400; 500; 600; 700; 800; 900&display=swap" rel= "stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--CSS Styling-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Marketoo E-commerce Website</title>
+  </head>
+  <body>
+
+    <!-- Loader Container -->
+  <div class="loader-container" id="loader">
+    <div class="loader"></div>
+  </div>
+
+  <!--Navbar-->
+  <nav>
+    <div class="wrapper">
+      <div class="logo"><a href="index.html">
+        <img src="logo.png" alt="Marketoo Logo">
+        MarketÒÓ
+      </a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links" id="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fa fa-times" aria-hidden="true"></i></label>
+        <div class="d-flex mx-1 my-3 d-sm-flex">
+          <div class="bg-light-subtle px-4 py-3 rounded-pill d-flex align-items-center">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html"><span class="fa fa-shopping-cart" aria-hidden="true"><i id="card-count" class="badge bg-danger ms-1 rounded-circle"></i></span></a></li>
+          </div>
+        </div>
+      </ul>
+      <label id="menu-icon" for="menu-btn" class="btn menu-btn"><i class="fa fa-bars"></i></label>
+    </div>
+  </nav>
+
+ <!--Slider-->
+  <div class="wrap">
+    <div id="arrow-left" class="arrow">
+      <i class="fa fa-angle-left fa-3x" aria-hidden="true"></i>
+    </div>
+      <!-- Title and Slogan -->
+      <div class="title-slogan">
+        <div class="d-flex mx-1 my-3">
+          <div class="bg-gradient px-4 py-1 rounded-pill d-flex align-items-center">
+            <h1>MarketÒÓ</h1>
+          </div>
+        </div>
+        <p>Your One-Stop Shop for Endless Choices!</p>
+        
+        <div class="buttons">
+          <a href="#start-category" class="custom-btn primary-btn">Get Started</a>
+          <a href="about.html" class="custom-btn secondary-btn">About Us</a>
+        </div>
+      </div>
+      
+      <div id="slider">
+      <div class="slide slide1">
+        <div class="slide-content">
+
+        </div>
+      </div>
+
+      <div class="slide slide2">
+        <div class="slide-content">
+
+        </div>
+      </div>
+
+      <div class="slide slide3">
+        <div class="slide-content">
+
+        </div>
+      </div>
+
+      <div class="slide slide4">
+        <div class="slide-content">
+    
+        </div>
+      </div>
+
+      <div class="slide slide5">
+        <div class="slide-content">
+  
+        </div>
+      </div>
+
+      <div class="slide slide6">
+        <div class="slide-content">
+    
+        </div>
+      </div>
+    </div>
+    <div id="arrow-right" class="arrow">
+      <i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>
+    </div>
+  </div>
+
+
+   <!--Products Container-->
+   <div class="container-fluid container-cards" id="start-category">
+    <h5 class="category-heading m-3">Categories</h5>
+    <div class="col-md-6 col-lg-6 col-sm-12 mb-3 d-flex flex-wrap">
+        <button class="custom-btn secondary-btn m-1 p-2 rounded-pill catg-move smaller-text" onclick="filterByCategory('All')" title="Show All Products">
+            <i class="fa fa-filter" aria-hidden="true"></i> All
+        </button>
+        <button class="btn btn-outline-secondary m-1 p-2 rounded-pill catg-move smaller-text" onclick="filterByCategory('electronics')" title="Electronics">
+            <i class="fa fa-filter" aria-hidden="true"></i> Electronics
+        </button>
+        <button class="btn btn-outline-secondary m-1 p-2 rounded-pill catg-move smaller-text" onclick="filterByCategory('men\'s clothing')" title="Men's Clothing">
+            <i class="fa fa-filter" aria-hidden="true"></i> Men's Clothing
+        </button>
+        <button class="btn btn-outline-secondary m-1 p-2 rounded-pill catg-move smaller-text" onclick="filterByCategory('jewelery')" title="Jewelry">
+            <i class="fa fa-filter" aria-hidden="true"></i> Jewelry
+        </button>
+        <button class="btn btn-outline-secondary m-1 p-2 rounded-pill catg-move smaller-text" onclick="filterByCategory('women\'s clothing')" title="Women's Clothing">
+            <i class="fa fa-filter" aria-hidden="true"></i> Women's Clothing
+        </button>
+    </div>
+  </div>
+
+  <div class="container-fluid container-cards">
+    <div class="row row-cols-1 row-cols-md-4" id="productContainer">
+      <!-- Product cards will be dynamically added here -->
+    </div>
+  </div>
+    
+
+
+   <!--Footer-->
+  <section class="footer">
+    <div class="footer-content">
+      <!-- <div class="logo">
+        <a href="#"><img src="logo.png" alt="Marketoo Logo"></a>
+      </div> -->
+      <div class="d-flex mx-1 logo">
+        <div class="bg-gradient px-4 rounded-pill d-flex align-items-center icons">
+          <a href="about.html"><img src="logo.png" alt="Marketoo Logo"></a>
+        </div>
+      </div>
+      <p>Your One-Stop Shop for Endless Choices!</p>
+  
+      <!-- <div class="icons">
+        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> <a href="#"><i class='bx bxl-twitter'></i></a>
+      </div> -->
+      <div class="d-flex mx-1">
+        <div class="bg-gradient px-4 rounded-pill d-flex align-items-center icons">
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="#"><i class='bx bxl-twitter'></i></a>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#"><i class='bx bxl-twitter'></i></a>
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a href="#"><i class='bx bxl-twitter'></i></a>
+          <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-content">
+      <h4>Products</h4>
+      <ul>
+        <li><a href="#">Laptops</a></li>
+        <li><a href="#">Smartphones</a></li>
+        <li><a href="#">Clothes</a></li>
+        <li><a href="#">Cameras</a></li>
+      </ul>
+    </div>
+  
+    <div class="footer-content">
+      <h4>Items</h4>
+      <ul>
+        <li><a href="/items/clothing">Clothing</a></li>
+        <li><a href="/items/accessories">Accessories</a></li>
+        <li><a href="/items/shoes">Shoes</a></li>
+        <li><a href="/items/bags">Bags</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-content">
+      <h4>Help</h4>
+      <ul>
+        <li><a href="/contact">Contact Us</a></li>
+        <li><a href="/privacy">Privacy</a></li>
+        <li><a href="/terms-of-use">Terms of Use</a></li>
+        <li><a href="/terms-and-conditions">Terms and conditions</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-content">
+      <h4>Check</h4>
+      <ul>
+        <li><a href="/contact/mail">Mail us</a></li>
+        <li><a href="/privacy-site">Privacy site</a></li>
+        <li><a href="/terms">Terms</a></li>
+        <li><a href="/faq">FAQ</a></li>
+      </ul>
+    </div>    
+  
+  </section>
+  
+   <!--All Rights-->
+  <div class="all-rights">
+    <h6>&copy; <span id="currentYear"></span> MarketÒÓ All Rghts Reserved.</h6>
+  </div>
+
+   <!--scroll Button-->
+  <a id="scrollToTopBtn"><i class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="mainScriptFile.js"></script>
+</body>
+</html>

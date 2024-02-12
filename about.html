@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.ico" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS Styling -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>About Us - Marketoo</title>
+</head>
+<body>
+
+  <!-- Loader Container -->
+  <div class="loader-container" id="loader">
+    <div class="loader"></div>
+  </div>
+
+  <!--Navbar-->
+  <nav>
+    <div class="wrapper">
+      <div class="logo"><a href="index.html">
+        <img src="logo.png" alt="Marketoo Logo">
+        MarketÒÓ
+      </a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links" id="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fa fa-times" aria-hidden="true"></i></label>
+        <div class="d-flex mx-1 my-3">
+          <div class="bg-light-subtle px-4 py-3 rounded-pill d-flex align-items-center">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </div>
+        </div>
+        <li><a href="cart.html"><span class="fa fa-shopping-cart" aria-hidden="true"><i id="card-count" class="badge bg-danger ms-1 rounded-pill"></i></span></a></li>
+      </ul>
+      <label id="menu-icon" for="menu-btn" class="btn menu-btn"><i class="fa fa-bars"></i></label>
+    </div>
+  </nav>
+
+    <!-- About Section -->
+    <div class="container container-content">
+      <div class="row">
+          <div class="col-lg-8">
+            <div class="d-flex mx-1 my-3">
+              <div class="bg-secondary-subtle px-4 py-1 rounded-pill d-flex align-items-center">
+                  <h5 class="m-0 page-title">About Us</h5>
+              </div>
+            </div>
+            <p>Welcome to our E-commerce website! We are dedicated to providing high-quality products and an excellent shopping experience for our customers.</p>
+            <p>Our mission is to offer a wide range of products with competitive prices, ensuring customer satisfaction and loyalty.</p>
+            <p>Explore our website to discover the latest trends in fashion, electronics, and more. We strive to bring you the best deals and a seamless online shopping experience.</p>
+            <p>Join our community of satisfied customers and enjoy exclusive offers and promotions. Thank you for choosing us for your online shopping needs!</p>
+          </div>
+          <!-- Add Animation JSON in the right column -->
+          <div class="col-lg-4">
+            <div class="d-flex align-items-end">
+              <div class="lottie-container" id="lottie-container" style="width: 400px; height: 400px;"></div>
+            </div>
+          </div>
+          <!-- Add more content or columns as needed -->
+      </div>
+    </div>
+    
+   <!--Footer-->
+   <section class="footer">
+    <div class="footer-content">
+      <div class="logo"><a href="#">
+        <img src="logo.png" alt="Marketoo Logo">
+      </a></div>
+      <p>Your One-Stop Shop for Endless Choices!</p>
+  
+      <div class="d-flex mx-1">
+        <div class="bg-gradient px-4 rounded-pill d-flex align-items-center icons">
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="#"><i class='bx bxl-twitter'></i></a>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#"><i class='bx bxl-twitter'></i></a>
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a href="#"><i class='bx bxl-twitter'></i></a>
+          <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-content">
+      <h4>Products</h4>
+      <ul>
+        <li><a href="#">Product one</a></li>
+        <li><a href="#">Product two</a></li>
+        <li><a href="#">Product three</a></li>
+        <li><a href="#">Product four</a></li>
+      </ul>
+    </div>
+  
+    <div class="footer-content">
+      <h4>Items</h4>
+      <ul>
+        <li><a href="#">Item one</a></li>
+        <li><a href="#">Item two</a></li>
+        <li><a href="#">Item three</a></li>
+        <li><a href="#">Item four</a></li>
+      </ul>
+    </div>
+  
+    <div class="footer-content">
+      <h4>Help</h4>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Terms and conditions</a></li>
+      </ul>
+    </div>
+  
+    <div class="footer-content">
+      <h4>Check</h4>
+      <ul>
+        <li><a href="#">Mail us</a></li>
+        <li><a href="#">Privacy site</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+  
+  </section>
+  
+   <!--All Rights-->
+  <div class="all-rights">
+    <h6>&copy; <span id="currentYear"></span> MarketÒÓ All Rghts Reserved.</h6>
+  </div>
+
+   <!--scroll Button-->
+  <a id="scrollToTopBtn"><i class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i></a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.10/lottie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="mainScriptFile.js"></script>
+    <script src="about.js"></script>
+</body>
+</html>
