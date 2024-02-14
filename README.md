@@ -18,9 +18,9 @@ HTML5, CSS3, JS, Bootstrap
 ◾ Use Animation based on JSON files
 
 ⚪ Challenges Overcome:
-Choosing a name and logo😅
-Building this e-commerce platform from scratch allowed me to tailor the website to meet specific requirements, ensuring a lightweight and efficient user interface.
-Overcoming challenges in web development was a crucial aspect of this project.
+◾ Choosing a name and logo😅
+◾ Building this e-commerce platform from scratch allowed me to tailor the website to meet specific requirements, ensuring a lightweight and efficient user interface.
+◾ Overcoming challenges in web development was a crucial aspect of this project.
 
 ![islam-ismail-aly github io_E-Commerce github io](https://github.com/Islam-Ismail-Aly/E-Commerce.github.io/assets/23121933/de893844-56a7-4a8a-8bd4-42f3eb9d77b4)
 
