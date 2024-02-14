@@ -41,8 +41,6 @@ HTML5, CSS3, JS, Bootstrap
 
 ![image](https://github.com/Islam-Ismail-Aly/E-Commerce.github.io/assets/23121933/73be6ef1-9e37-4f74-b9f8-94e5d9671bea)
 
-![image](https://github.com/Islam-Ismail-Aly/E-Commerce.github.io/assets/23121933/80d605f1-c354-426b-b436-9cea8bcb30b6)
-
 
 
 
