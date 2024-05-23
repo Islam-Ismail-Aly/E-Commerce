@@ -1,6 +1,6 @@
 # E-Commerce Website
 
-## Demo
+**Demo**
 [Visit the live site](https://islam-ismail-aly.github.io/E-Commerce.github.io)
 
 ## Overview
@@ -41,6 +41,8 @@ Creating a responsive e-commerce website with essential pages like home, about, 
   - Tailored the website to meet specific requirements, ensuring a lightweight and efficient user interface.
 - **Web Development Challenges**
   - Overcame various challenges in web development, enhancing the overall experience and functionality of the platform.
+
+    
 
 
 ![islam-ismail-aly github io_E-Commerce github io](https://github.com/Islam-Ismail-Aly/E-Commerce.github.io/assets/23121933/de893844-56a7-4a8a-8bd4-42f3eb9d77b4)
