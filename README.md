@@ -1,6 +1,6 @@
 # E-Commerce Website
 
-**Demo**
+# Demo
 [Visit the live site](https://islam-ismail-aly.github.io/E-Commerce.github.io)
 
 ## Overview
